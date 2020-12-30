@@ -5,6 +5,8 @@ function Navigation() {
         <div>
             <h1>NAVBAR</h1>
             <h1>Contacts</h1>
+            <h1>About us </h1>
+
         </div>
     )
 }
