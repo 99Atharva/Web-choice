@@ -7,6 +7,7 @@ function Navigation() {
             <h1>Contacts</h1>
             <h1>About us </h1>
             <h1>Home</h1>
+            <h1>Blog</h1>
 
         </div>
     )
