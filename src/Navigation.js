@@ -7,6 +7,16 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
+<<<<<<< HEAD
+function Navigation() {
+    return (
+        <div>
+            <h1>NAVBAR</h1>
+            <h1>Contacts</h1>
+            <h1>About us </h1>
+            <h1>Home</h1>
+            <h1>Blog</h1>
+=======
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -18,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
 }));
+>>>>>>> eeeef92ed450c3e4da0afef27e5e12eded5e6d05
 
 export default function ButtonAppBar() {
   const classes = useStyles();
