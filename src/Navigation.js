@@ -6,41 +6,52 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import "./Navigation.css"
+import "./Navigation.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(3),
   },
   title: {
     flexGrow: 1,
   },
+  back: {
+      background:"#ff7b54"
+  },
+  type: {
+      padding:"20px",
+      color: "#ffff",
+      marginRight: "25px"
+  }
+
 }));
-
-
 
 export default function ButtonAppBar() {
   const classes = useStyles();
 
   return (
-   
-           <div className="appbar" >
-      <AppBar position="static" >
+    <div className={classes.root}>
+      <AppBar position="static" className={classes.back}>
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            News
+            Web Choice
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Typography variant="h6" >
+          <a href="#" className={classes.type}>Blog</a>
+          <a href="#" className={classes.type}>Contact Us</a>
+          <a href="#" className={classes.type}>Services</a>
+          </Typography>
+          
+          <Button color="inherit" size="medium" variant="outlined">Login</Button>
+          
         </Toolbar>
       </AppBar>
     </div>
-   
   );
 }
