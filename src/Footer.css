@@ -1,0 +1,36 @@
+.footer_box {
+    display: flex;
+    justify-content: space-between;
+    padding:20px 40px;
+    margin-top: 30px;
+    background: rgb(184, 184, 184);
+    
+}
+
+
+.left {
+    width: 35%;
+    
+}
+.left h2 {
+    text-align: center;
+}
+
+.social_links {
+        width: 33%;
+        display: flex;
+        margin-left: 10%;      
+}
+.twitter {
+    color: rgb(0, 255, 255);
+}
+
+.contact {
+ display: flexbox;
+ justify-content: center;
+
+}
+.contact h4 {
+    margin-bottom: 10px;
+    text-align: center;
+}
