@@ -43,9 +43,6 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="static" className={classes.back}>
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
           <Typography variant="h6" className={classes.title}>
             Web Choice
           </Typography>
@@ -54,9 +51,8 @@ export default function ButtonAppBar() {
           <a href="#" className={classes.type}>Contact Us</a>
           <a href="#" className={classes.type}>Services</a>
           </Typography>
-          
-          <Button color="inherit" size="medium" variant="outlined">signup {onclick = (GoogleSignup)} </Button>
-          
+          <Button color="inherit" size="medium" variant="outlined">signup {onclick = (GoogleSignup)} 
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

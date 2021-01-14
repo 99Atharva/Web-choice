@@ -18,9 +18,10 @@
 
 .social_links {
         width: 33%;
-        display: flex;
-        margin-left: 10%;      
+        padding: 2% 0;
 }
+
+
 .twitter {
     color: rgb(0, 255, 255);
 }
@@ -33,4 +34,10 @@
 .contact h4 {
     margin-bottom: 10px;
     text-align: center;
+}
+
+
+
+.MuiIconButton-root {
+      padding: 30px !important;
 }

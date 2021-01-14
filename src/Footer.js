@@ -14,13 +14,13 @@ function Footer() {
                 <p>Tomcat siamese, sphynx. Balinese cougar. Scottish fold ocelot yet cheetah and american shorthair ocicat for tom. Jaguar puma. Cheetah panther yet grimalkin. Ragdoll russian blue savannah yet cornish rex but grimalkin so scottish fold. Devonshire rex turkish angora and kitty.</p>
             </div>
             <div className="social_links">
-            <IconButton>
-            <FacebookIcon fontSize="large" color="primary" />
+            <IconButton className="icon">
+            <FacebookIcon fontSize="large" color="primary"  />
             </IconButton>
-            <IconButton> 
-            <TwitterIcon fontSize="large" className="twitter" />
+            <IconButton > 
+            <TwitterIcon fontSize="large" className="twitter"/>
             </IconButton>
-            <IconButton>
+            <IconButton >
             <InstagramIcon fontSize="large" color="secondary" />
             </IconButton>
             </div>
