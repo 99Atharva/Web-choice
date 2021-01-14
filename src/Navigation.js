@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import "./Navigation.css";
+import {auth , provider } from "./firebaseconfig"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,6 +30,12 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
+function GoogleSignup() {
+
+  auth.signInWithPopup(provider);
+  
+}
+
 export default function ButtonAppBar() {
   const classes = useStyles();
 
@@ -48,7 +55,7 @@ export default function ButtonAppBar() {
           <a href="#" className={classes.type}>Services</a>
           </Typography>
           
-          <Button color="inherit" size="medium" variant="outlined">Login</Button>
+          <Button color="inherit" size="medium" variant="outlined">signup {onclick = (GoogleSignup)} </Button>
           
         </Toolbar>
       </AppBar>
