@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import '../Components/Footer.css';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
