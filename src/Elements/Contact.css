@@ -1,0 +1,80 @@
+.form {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 6rem;
+    
+
+}
+
+.feedback {
+    display: flexbox;
+    border: 1px solid #ff926b ;
+    background-color: #fff3cd;
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+
+}
+.feedback button {
+    margin-bottom: 10px;
+}
+
+.fields {
+    
+    display: flex;
+    padding: 25px 10px;
+}
+
+.contact {
+    display: flexbox;
+    margin-top: 8%;
+    margin-right: 40px;
+    width: 50%;
+    text-align:right;
+    color: #4d3e3e;
+    
+}
+
+.head h2 {
+    padding: 10px 20px;
+    text-align: center;
+    margin: 30px 0;
+    color: #4d3e3e;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+    
+}
+
+.head h2:after {
+    
+    display: flex;
+    margin-left: 45%;
+    width: 160px;
+    background-color:#ff926b;
+    border-radius: 3px;
+    height: 3px;
+    margin-top: 5px;
+    content: " ";
+}
+
+
+.phone {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.email {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.phone h4 {
+    padding-left: 90px;
+}
+
+.email h4 {
+    padding-left: 40px;
+}
