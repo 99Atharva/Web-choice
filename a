@@ -1,0 +1,45 @@
+[33m1792916[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{0}: reset: moving to HEAD
+[33m1792916[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{1}: reset: moving to HEAD
+[33m1792916[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{2}: reset: moving to HEAD~3
+[33m7df364d[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{3}: checkout: moving from master to master
+[33m7df364d[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{4}: pull: Fast-forward
+[33mad2168c[m HEAD@{5}: reset: moving to ad2168c597b15e95f9d2358167fdd1f29c6bb32d
+[33mad2168c[m HEAD@{6}: reset: moving to ad2168c597b15e95f9d2358167fdd1f29c6bb32d
+[33mc89415b[m HEAD@{7}: commit: ROll_BACK
+[33mad2168c[m HEAD@{8}: reset: moving to ad2168c597b15e95f9d2358167fdd1f29c6bb32d
+[33m7df364d[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{9}: pull: Fast-forward
+[33m83a0ff0[m HEAD@{10}: reset: moving to 83a0ff0
+[33m7df364d[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{11}: commit: new
+[33mc4cd2d9[m HEAD@{12}: pull: Fast-forward
+[33m83a0ff0[m HEAD@{13}: reset: moving to HEAD~1
+[33mc4cd2d9[m HEAD@{14}: commit: change
+[33m83a0ff0[m HEAD@{15}: checkout: moving from master to master
+[33m83a0ff0[m HEAD@{16}: pull: Merge made by the 'recursive' strategy.
+[33m1792916[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{17}: commit: Card
+[33mbf3ae40[m HEAD@{18}: commit: Contact Page
+[33m25e8a71[m HEAD@{19}: commit: Organise Content
+[33m69799b8[m HEAD@{20}: commit: BG
+[33me42c8ef[m HEAD@{21}: commit: Adding Router
+[33m6a14fab[m HEAD@{22}: pull: Fast-forward
+[33m2877b28[m HEAD@{23}: commit: footer
+[33m84e3619[m HEAD@{24}: pull: Fast-forward
+[33m06faf85[m HEAD@{25}: commit: Home Page
+[33m02b218e[m HEAD@{26}: commit: new nav
+[33m4208667[m HEAD@{27}: commit: changing color
+[33m872379d[m HEAD@{28}: commit (merge): t
+[33m4626192[m HEAD@{29}: commit: adding nav bar
+[33m0647226[m HEAD@{30}: commit: nav
+[33me217670[m HEAD@{31}: commit: debug
+[33m1699b8e[m HEAD@{32}: commit: fix
+[33me67253c[m HEAD@{33}: pull: Merge made by the 'recursive' strategy.
+[33mfa2533f[m HEAD@{34}: commit: y
+[33meeeef92[m HEAD@{35}: commit: adding navbar
+[33mfc609de[m HEAD@{36}: commit: home
+[33md665310[m HEAD@{37}: pull: Fast-forward
+[33mc902628[m HEAD@{38}: commit (merge): y
+[33m692d010[m HEAD@{39}: reset: moving to HEAD
+[33m692d010[m HEAD@{40}: commit: changing nav
+[33ma66518f[m HEAD@{41}: commit: nav head
+[33ma8b215a[m HEAD@{42}: commit: Clearing trash files
+[33m03278a5[m HEAD@{43}: pull: Fast-forward
+[33m5bf8c15[m HEAD@{44}: commit (initial): Initialize project using Create React App

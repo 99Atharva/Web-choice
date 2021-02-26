@@ -1,0 +1,40 @@
+.image {
+    position: relative;
+}
+
+.image img {
+    background-size: cover;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.overlay {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.623);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.overlay :first-child {
+   transform: translateY(20px);
+   transition: transform 0.5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay:hover :first-child {
+    transform: translateY(0);
+}
