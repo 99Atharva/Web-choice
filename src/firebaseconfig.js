@@ -3,13 +3,13 @@ import "firebase/auth";
 
 
 var firebaseConfig = {
-    apiKey: "AIzaSyD-mAeYvwYvRlrfXJuGXkND0Kh8BISkVrM",
-    authDomain: "fir-test-56764.firebaseapp.com",
-    projectId: "fir-test-56764",
-    storageBucket: "fir-test-56764.appspot.com",
-    messagingSenderId: "681584047410",
-    appId: "1:681584047410:web:e58ab219d405655955932b"
-  };
+  apiKey: "AIzaSyB1eok-mfLnxrRYcoJJ2yC8JxvLQ2LUmQk",
+  authDomain: "webchoice-backend.firebaseapp.com",
+  projectId: "webchoice-backend",
+  storageBucket: "webchoice-backend.appspot.com",
+  messagingSenderId: "710505958643",
+  appId: "1:710505958643:web:2addc526c2c8886634bb86"
+};
 
   firebase.initializeApp(firebaseConfig);
 
