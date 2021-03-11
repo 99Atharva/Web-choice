@@ -16,15 +16,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SimplePaper() {
+export default function SimplePaper({image , title }) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Paper elevation={7} className="image">
-        <img src={img} alt="project"/>
+        <img src={image} alt="project"/>
         <div className="overlay">
-          <span>The Burger</span>
+          <span>{title}</span>
         </div>
         </Paper>
     </div>
