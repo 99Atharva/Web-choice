@@ -42,9 +42,9 @@ function Contact() {
 
     return (
         <div className="head"><h2>Contact</h2>
-        <div className="form"  onSubmit = {handlesubmit}>
+        <div className="form" >
             
-            <div className="feedback">
+            <form className="feedback"  onSubmit = {handlesubmit}>
             <div className="fields">
             <TextField required id="standard-required" 
             label="name" type="Name"  variant="outlined"  value = {name}
@@ -81,7 +81,7 @@ function Contact() {
            <Button  variant="outlined"  >Submit</Button>
            
 
-            </div>
+            </form>
             
             <div className="contact">
                 
