@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    padding: 1rem 2rem;
+    letter-spacing: 3px;
+    font-size:3rem;
+    font-weight: 500;
+    
+}
+h1::after {
+    display: block;
+    content: "";
+    border: 2px solid rgb(69, 228, 175);
+    background-color: rgb(69, 228, 175);
+    border-radius: 4px;
+    width: 10rem;
+    margin-left: 40rem ;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 1rem 4rem;
+}
+
+.back {
+    background-color: rgb(206, 206, 206);
+}

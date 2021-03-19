@@ -2,14 +2,12 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import "../Components/Card.css";
-import img from "../Components/d1.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    flexWrap: 'wrap',
     '& > *': {
-      margin: theme.spacing(1),
+      margin: theme.spacing(4),
       width: theme.spacing(40),
       height: theme.spacing(40),
     },

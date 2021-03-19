@@ -2,6 +2,7 @@ import React from 'react'
 import Card from "../Components/Card";
 import {useEffect, useState} from 'react';
 import db from '../firebaseconfig';
+import "./Work.css";
 
 
 function Work() {
@@ -26,18 +27,21 @@ function Work() {
 
 
     return (
-        <div>
-           <h1>Work</h1> 
-           
-      {
+        <div className="back">
+           <h1>Our Work</h1> 
+           <div className="container">
+             
+             {
 
-posts.map(({id , post}) => (
-  <Card  key = {id} image = {post.image} title = {post.title} /> 
-))
+                posts.map(({id , post}) => (
+                  <Card  key = {id} image = {post.image} title = {post.title} /> 
+                ))
 
-}
-           
-        </div>
+             } 
+             
+            
+           </div>         
+        </div>  
     )
 }
 

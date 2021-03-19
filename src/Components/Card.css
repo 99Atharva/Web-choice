@@ -1,5 +1,6 @@
 .image {
     position: relative;
+    
 }
 
 .image img {
@@ -19,6 +20,7 @@
     font-size: 3rem;
     font-weight: 400;
     text-shadow: 1px 1px 4px rgb(255, 255, 255);
+    border-radius: 4px;
     background: rgba(0, 0, 0, 0.623);
     flex-direction: column;
     align-items: center;
@@ -38,3 +40,4 @@
 .overlay:hover :first-child {
     transform: translateY(0);
 }
+
