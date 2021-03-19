@@ -4,41 +4,85 @@ import TextField from '@material-ui/core/TextField';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import Button from '@material-ui/core/Button';
+import {useEffect, useState} from 'react';
+import db from '../firebaseconfig';
+
 
 function Contact() {
+
+    const [name , setName ] = useState('');
+    const [email , setEmail ] = useState('');
+    const [phone , setPhone ] = useState('');
+    const [message , setMessage ] = useState('');
+
+    const handlesubmit = (e) => {
+        e.preventDefault();
+
+        db.collection('contacts').add({
+            name: name,
+            email : email,
+            phone: phone,
+            message : message
+
+        })
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     return (
         <div className="head"><h2>Contact</h2>
-        <div className="form" >
+        <div className="form"  onSubmit = {handlesubmit}>
             
             <div className="feedback">
             <div className="fields">
             <TextField required id="standard-required" 
-            label="Name" type="Name"  variant="outlined" />
+            label="name" type="Name"  variant="outlined"  value = {name}
+            onChange = { (e) => setName(e.target.value) } />
             </div>
             
             <div className="fields">
             <TextField required id="standard-required" 
-            label="Email"  variant="outlined" />
+            label="email"  variant="outlined"
+            value = {email}
+            onChange = { (e) => setEmail(e.target.value)} />
             </div>
 
             <div className="fields">
             <TextField  id="standard" 
-            label="Phone"  variant="outlined" />
+            label="phone"  variant="outlined" 
+            value = {phone} 
+            onChange = {(e) => setPhone(e.target.value)} />
             </div>
 
             <div className="fields">
             <TextField className="messagebox"
             id="outlined-multiline-static"
-            label="Tell us your problem"
+            label="message"
             multiline
             rows={3}
             fullWidth
             variant="outlined"
+            value = {message}
+            onChange = {(e) => setMessage(e.target.value)}
             />
             
             </div>
            <Button  variant="outlined"  >Submit</Button>
+           
+
             </div>
+            
             <div className="contact">
                 
                 <div className="phone">
