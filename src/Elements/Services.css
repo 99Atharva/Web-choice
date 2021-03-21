@@ -1,10 +1,10 @@
-.service .container{
-        background-color: rgb(231, 231, 231);
+.service {
+        background-color: rgb(216, 216, 216);
 }
 .plan_box{
-    height: auto;
-    border: 1px solid 2px 5px 4pxrgb(85, 52, 52);
+    background-color: aliceblue;
     border-radius: 4px;
+    color: rgb(106, 114, 111);
     box-shadow: 0 2px 2px #c6c6c6;
 }
 .plan_box div {
@@ -13,9 +13,10 @@
 }
 
 .head {
-    background-color: rgb(206, 206, 206);
+    background-color: #e6e6e6;;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
+    line-height: 1.5;
 }
 
 .head p{
@@ -37,4 +38,20 @@
 
 .btn {
     text-align: center;
+}
+.text {
+    font-size: xx-large;
+    text-align: center;
+    padding: 5rem 2rem;
+    color: #4b3b3b;
+}
+.text p{
+  padding: 2rem 10rem;
+  font-size: large;
+  display: flexbox;
+  flex-wrap: wrap;
+  color: #6b6b6b;
+}
+.btn .MuiButton-root {
+    color: rgb(54, 99, 99) im !important;
 }

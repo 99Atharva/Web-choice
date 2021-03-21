@@ -1,10 +1,12 @@
 .image {
     position: relative;
     
+    
 }
 
 .image img {
     background-size: cover;
+    width: 320px;
     height: 100%;
     border-radius: 4px;
 }

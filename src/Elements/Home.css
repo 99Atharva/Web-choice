@@ -5,3 +5,53 @@
         width: 100%;
         background-size: contain;
 }
+
+.greet{  
+        background-image: linear-gradient(to right, rgba(119, 8, 8, 0.719) , rgba(10, 10, 167, 0.5)), url("./Photos/greeting.jpg");
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+
+}
+.greet h2{
+        text-align: center;
+        padding: 20% ;
+        font-size: 6rem;
+        font-weight: 400;
+        color: rgba(240, 255, 255, 0.842);
+
+}
+
+.write{  
+        position: relative;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.582) , rgba(0, 0, 0, 0.788)),url("./Photos/Write.jpg") ;
+       height: 100vh;
+       width: 100%;
+       background-size: cover;
+}
+
+.write div p{
+        position: absolute;
+        display: flex;
+        width: 30%;
+        margin-left: 30px;
+        margin-top: 20px;
+        border-radius: 4px;
+        box-shadow: rgb(74, 77, 77) 1px 1px 3px;
+}
+
+.serach{  
+        background-image: linear-gradient( rgba(56, 54, 54, 0.719) , rgba(46, 46, 48, 0.5)), url("./Photos/Search.jpg");
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+}
+
+
+.secure{  
+        background-image: linear-gradient(to right, rgba(44, 33, 33, 0.719) , rgba(10, 109, 167, 0.5)), url("./Photos/Secure.jpg");
+        height: 100vh;
+        width: 100%;
+        background-size: 100% 100%;
+}

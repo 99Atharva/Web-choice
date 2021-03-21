@@ -1,3 +1,4 @@
+
 .form {
     display: flex;
     justify-content: space-around;
@@ -16,13 +17,17 @@
 
 }
 .feedback button {
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
 }
+
 
 .fields {
     
     display: flex;
-    padding: 25px 10px;
+    padding: 1rem 4rem;
+}
+.feedback :first-child {
+    
 }
 
 .contact {
@@ -36,9 +41,8 @@
 }
 
 .head h2 {
-    padding: 10px 20px;
+    padding: 2rem 0;
     text-align: center;
-    margin: 30px 0;
     color: #4d3e3e;
     font-size: 4rem;
     font-weight: 400;

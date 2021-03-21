@@ -1,17 +1,25 @@
 import React from 'react';
 import '../Elements/Home.css';
-import './photo.png';
-import HomeContent from './HomeContent';
 
 
 function Home() {
     return (
        <div> 
            <div className="home_container">
-        </div>
-        
-            <HomeContent />
-        
+           </div>
+           <div className="greet">
+                <h2>Our Greetings</h2>
+           </div>
+            <div className="write">
+               <div ><p>Let Us take Care About what to write</p> </div>
+            </div>  
+
+            <div className="serach">
+                yes
+                </div> 
+                <div className="secure">
+
+                </div>
         </div>
     )
 }
