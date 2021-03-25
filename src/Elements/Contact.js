@@ -87,7 +87,8 @@ function Contact() {
                 
                 <div className="phone">
                    <PhoneIcon fontSize="large" color="action" /> 
-                   <h4>+91 7587136525 </h4> 
+                   <h4>+91 8349387273</h4>
+                   <h4>+91 7987851366 </h4> 
                    <h4>+91 9630868841 </h4> 
                   </div>
                    <div className="email">

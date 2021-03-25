@@ -11,7 +11,10 @@ function Footer() {
         <div className="footer_box">
             <div className="left">
                 <h2>About Us </h2><br />
-                <p>Tomcat siamese, sphynx. Balinese cougar. Scottish fold ocelot yet cheetah and american shorthair ocicat for tom. Jaguar puma. Cheetah panther yet grimalkin. Ragdoll russian blue savannah yet cornish rex but grimalkin so scottish fold. Devonshire rex turkish angora and kitty.</p>
+                <p>Just a bunch of student who wants to be someone from no-one. We just want to
+                    help you focus on the work and leave advertising and other works on us.
+                    Let us be your hands.
+                </p>
             </div>
             <div className="social_links">
             <IconButton className="icon">

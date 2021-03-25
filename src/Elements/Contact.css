@@ -65,7 +65,7 @@
 
 
 .phone {
-    display: flex;
+    display: flexbox;
     justify-content: flex-end;
     margin-bottom: 30px;
 }
