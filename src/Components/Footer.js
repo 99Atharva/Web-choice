@@ -5,6 +5,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import IconButton from '@material-ui/core/IconButton';
 import PhoneIcon from '@material-ui/icons/Phone';
+import Button from '@material-ui/core/Button';
 
 function Footer() {
     return (
@@ -18,14 +19,14 @@ function Footer() {
             </div>
             <div className="social_links">
             <IconButton className="icon">
-            <FacebookIcon fontSize="large" color="primary"  />
+            <FacebookIcon fontSize="large" color="primary" herf="#" />
             </IconButton>
             <IconButton > 
             <TwitterIcon fontSize="large" className="twitter"/>
             </IconButton>
-            <IconButton >
+            <Button href="https://www.instagram.com/webchoicemarketing/" >
             <InstagramIcon fontSize="large" color="secondary" />
-            </IconButton>
+            </Button>
             </div>
             <div className="contact">
                 <h4>Get In touch</h4>
