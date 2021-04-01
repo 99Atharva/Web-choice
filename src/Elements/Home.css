@@ -16,11 +16,11 @@
 }
 .greet h2{
         text-align: center;
-        padding: 20% ;
+        padding: 20% 10%;
         font-size: 6rem;
+        flex-wrap: wrap;
         font-weight: 400;
         color: rgba(240, 255, 255, 0.842);
-
 }
 
 .write{  
@@ -43,7 +43,7 @@
         background-color: rgba(240, 240, 240, 0.349);
         color: rgb(54, 54, 54);
         line-height: 2rem;
-        font-size: x-large;
+        font-size: 2rem;
         text-align: center;
 }
 
