@@ -52,6 +52,6 @@
   flex-wrap: wrap;
   color: #6b6b6b;
 }
-.btn .MuiButton-root {
-    color: rgb(54, 99, 99) im !important;
+.btn  :hover {
+    color: rgb(247, 164, 40) !important;
 }

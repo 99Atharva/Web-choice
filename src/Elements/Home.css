@@ -6,7 +6,8 @@
         background-size: contain;
 }
 
-.greet{  
+.greet{ 
+        position: relative;
         background-image: linear-gradient(to right, rgba(119, 8, 8, 0.719) , rgba(10, 10, 167, 0.5)), url("./Photos/greeting.jpg");
         height: 100vh;
         width: 100%;
@@ -15,17 +16,20 @@
 
 }
 .greet h2{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
         text-align: center;
-        padding: 20% 10%;
+        transform: translate(-50%, -50%);
         font-size: 6rem;
-        flex-wrap: wrap;
         font-weight: 400;
         color: rgba(240, 255, 255, 0.842);
 }
 
 .write{  
         position: relative;
-        background-image: linear-gradient( rgba(0, 0, 0, 0.76) , rgba(0, 0, 0, 0.788)),url("./Photos/Write.jpg");
+        background-image: linear-gradient( rgba(0, 0, 0, 0.582) , rgba(0, 0, 0, 0.575)),url("./Photos/Write.jpg");
         height: 100vh;
        width: 100%;
        background-size: cover;
@@ -33,17 +37,17 @@
 
 .main_home p{
         position: absolute;
-        padding: 2rem 3rem;
+        padding: 2rem 2rem;
         display: flex;
         width: 35%;
         margin-left: 30px;
         margin-top: 6rem;
         border-radius: 4px;
-        box-shadow: rgb(102, 102, 102) 1px 1px 3px;
-        background-color: rgba(240, 240, 240, 0.349);
-        color: rgb(54, 54, 54);
+        box-shadow: rgb(102, 102, 102) 1px 1px 5px;
+        background-color: rgba(80, 80, 80, 0.541);
+        color: rgb(216, 216, 216);
         line-height: 2rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
 }
 

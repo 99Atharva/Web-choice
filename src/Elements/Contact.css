@@ -53,3 +53,17 @@
     color: rgb(104, 104, 104);
     font-weight: 600;
 }
+
+
+@media (max-width: 1032px) {
+   
+   .Feedback *{
+        font-size: 14px;
+   }
+
+    .detail{
+        padding: 4rem 3rem;
+    width: 35rem;
+    text-align: center;
+    }
+}

@@ -6,19 +6,48 @@
 .nav-links {
     display: flex;
     flex-grow:0.5;
-    width: 30%;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    margin-right: 20px;
+    padding: 10px 30px;
 } 
-.MuiButton-outlined {
-    border: 2px solid #3f3f44e0 !important;
-}
+
 
 .li {
     text-decoration: none;
     color: #3f3f44;
-    font-size:x-large;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
 }
+
+.nav-links2 li{
+    font-size: 15px;
+}
+.nav-links2{
+    list-style: none;
+}
+
+/*  --------------------  CSS PROPERTY FOR HIDING THE NAV ELEMENTS ------------------ */
+
+/* 
+.Menu {
+        opacity: 0;
+}
+
+@media only screen and (max-width: 940px) {
+    .Menu {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .nav-links {
+        opacity: 0;
+        width: 0;
+        padding: 0;
+    }
+    .nav-links li{
+        margin: 0;
+    }
+} */

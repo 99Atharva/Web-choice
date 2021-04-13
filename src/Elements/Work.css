@@ -6,15 +6,14 @@ h1 {
     font-weight: 500;
     
 }
-h1::after {
+.back h1::after {
     display: block;
     content: "";
     border: 2px solid rgb(69, 228, 175);
     background-color: rgb(69, 228, 175);
     border-radius: 4px;
     width: 10rem;
-    margin-left: 40rem ;
-    
+   
 }
 
 .container {
