@@ -13,7 +13,7 @@ function Work() {
 
 
     useEffect(() => { 
-       db.collection('users').onSnapshot(snapshot => {
+       db.collection('images').onSnapshot(snapshot => {
    
          setPosts(snapshot.docs.map(doc => ({ 
            id: doc.id,

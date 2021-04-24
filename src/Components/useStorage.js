@@ -6,8 +6,11 @@ const useStorage = (file) => {
   const [error, setError] = useState(null);
   const [url, setUrl] = useState(null);
 
+
   useEffect(() => {
      const storageRef = storage.ref(`ProImg/${file.name}`);
+     const collectionRef = db.collection('images');  
+
      console.log("okay");
      storageRef.put(file).on('state_changed', 
      (snapshot)=> {
@@ -21,6 +24,12 @@ const useStorage = (file) => {
       async () => {
         const url = await storageRef.getDownloadURL();
         setUrl(url);
+        collectionRef.add({
+          title: file.name,
+          image: url
+      }).then(()=> {
+        alert("Reflected in Firestore 👍");
+    })   
       console.log('File available at', url);
     });
   

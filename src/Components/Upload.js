@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
   const changeHandler = e => {
      if(e.target.files[0]){
       setFile(e.target.files[0]);
-      
      }
   };
   
@@ -50,9 +49,7 @@ const useStyles = makeStyles((theme) => ({
         
       </label>
       {file && <ProgressBar file={file} setFile={setFile} />}
-    </div>
-  
-  
+    </div>  
   );
   }
 
