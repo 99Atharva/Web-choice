@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+  .progress{
+    height: 5px;
+    background: rgb(255, 177, 177);
+    margin-top: 20px;
+  }
+  

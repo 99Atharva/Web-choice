@@ -21,4 +21,4 @@ const firebaseApp = firebase.initializeApp(
    
 
    export default db;
-   export{auth , provider , storage}
+   export{auth , provider,db , storage}

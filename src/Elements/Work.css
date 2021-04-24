@@ -6,7 +6,7 @@ h1 {
     font-weight: 500;
     
 }
-.back h1::after {
+/* .back h1::after {
     display: block;
     content: "";
     border: 2px solid rgb(69, 228, 175);
@@ -14,7 +14,7 @@ h1 {
     border-radius: 4px;
     width: 10rem;
    
-}
+} */
 
 .container {
     display: flex;

@@ -3,6 +3,7 @@ import Card from "../Components/Card";
 import {useEffect, useState} from 'react';
 import db from '../firebaseconfig';
 import "./Work.css";
+import UploadFile from '../Components/Upload';
 
 
 function Work() {
@@ -22,6 +23,8 @@ function Work() {
    }, []);
 
 
+    
+
 
 
 
@@ -40,7 +43,9 @@ function Work() {
              } 
              
             
-           </div>         
+           </div>  
+
+           <UploadFile />      
         </div>  
     )
 }
