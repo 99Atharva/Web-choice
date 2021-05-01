@@ -3,7 +3,9 @@ import React from 'react'
 function Blog() {
     return (
         <div>
-           <h1>Blog</h1> 
+           <h1>Coming Soon !</h1> 
+
+           <h2></h2>
         </div>
     )
 }

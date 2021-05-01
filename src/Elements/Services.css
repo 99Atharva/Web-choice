@@ -22,6 +22,7 @@
 .head p{
     font-size: 3rem;
     font-weight: 200;
+    position: "relative"
 }
 .head span {
     font-size: large;
