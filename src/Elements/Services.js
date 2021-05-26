@@ -2,7 +2,75 @@ import React from 'react';
 import "./Services.css";
 import Button from "@material-ui/core/Button";
 
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import TextField from '@material-ui/core/TextField';
+import Dialog from '@material-ui/core/Dialog';
+import { useState} from 'react';
+import db from '../firebaseconfig';
+
+
+
+
+
 function Services() {
+
+    
+
+
+        const [open, setOpen] = React.useState(false);
+    
+        const handleClickOpen = () => {
+          setOpen(true);
+        };
+      
+        const handleClose = () => {
+          setOpen(false);
+        };
+
+
+
+        const [name , setName ] = useState('');
+        const [email , setEmail ] = useState('');
+        const [phone , setPhone ] = useState('');
+
+        const submitHandler = (e) => {
+
+             e.preventDefault();
+
+             db.collection('feedback').add({
+                name: name,
+                email : email,
+                phone: phone,
+                
+    
+            })
+            .then(()=> {
+                alert("Response has been Submitted 👍");
+            })
+    
+            setName("");
+            setEmail("");
+            setPhone("");
+            
+        };
+
+
+     const [info,setInfo]  = useState( [
+
+     {title : 'Submission form', subtitle : 'Submit the following form after reading the T&c Carefully', }
+
+
+
+
+
+
+     ])
+
+
+        
     return (
         <div className="service">
             <h1>Services</h1>
@@ -12,34 +80,222 @@ function Services() {
                 <diV className="plan_box">
                    
                     <div className="head">
-                       <h3>Pricing Starts At</h3>
-                       <p>₹ 120 <span>/ Post</span></p>
+                        
+                       <h3>SMM Bronze 🥉 </h3>
+                       <p>₹ 3500  <span>+ Ad spent</span></p>
+                       
                     </div>
                    
                     <div className="features">
+                        <h3>Duration : 1 Month</h3>
                         <ul>
                             <li>
-                                x
+                                Account Handling 
                             </li>
                             <li>
-                                y
+                                Audience Research
                             </li>
                             <li>
-                                z
+                                Strategy Preprations
+                            </li>
+
+                            <li>
+                                 Color Corrections  ✔️
+                                 
+                            </li>
+                            
+                            <li>
+                                Font Changes ✔️
+                            </li>
+                        </ul>
+                    </div>
+                   
+                    <div className="btn">
+                    <Button variant="contained" color="inherit" className="MuiButton-root"  onClick = {handleClickOpen}>
+                        Get Started 
+
+                    </Button>
+                    <Dialog open = {open} onClose = {handleClose} >
+
+                      <DialogTitle><h2  >Submission Form</h2> </DialogTitle>
+
+                      <DialogContent>
+
+                      <DialogContentText>
+                         <h3> Submit the following form after reading the T&c Carefully  </h3>
+
+                          <p>    </p>     
+                        
+                          
+
+                          Package Includes 👇
+
+                          <p>    </p>   
+                        👉Content Creation : 2500
+                        (10 Posts per Month)
+                        <p>    </p>   
+                        👉Operational Cost : 1000
+                        (Account Handling, Audience Research and Strategy Preprations)
+                        <p>    </p>   
+                        👉Paid Promotion : 1k to 5k
+                        (Paid to Social Media Platforms)
+                        <p>    </p>   
+                        Privileges 👇
+                        <p>    </p>   
+                        👉Color corrections ✅ 
+                        <p>    </p>   
+                        👉Font Changes ✅
+
+                      </DialogContentText>
+
+                      <TextField
+                        autoFocus
+                        margin="dense"
+                        id="name1"
+                        label="Name"
+                        type="text"
+                        fullWidth
+                        value = {name}
+                        onChange={(e)=> setName(e.target.value )} 
+                         />
+
+                      <TextField
+                         
+                        margin="dense"
+                        id="name2"
+                        label="Email Address"
+                        type="email"
+                        fullWidth
+                        value = {email}
+                        onChange={(e)=> setEmail(e.target.value )}
+                         />
+
+
+
+                       <TextField
+                        
+                        margin="dense"
+                        id="name2"
+                        label="Phone"
+                        type="number"
+                        fullWidth
+                        value = {phone}
+                        onChange={(e)=> setPhone(e.target.value )}
+                         />
+
+                      </DialogContent>
+                      <DialogActions>
+                        <Button onClick={handleClose} color="primary">
+                            Cancel
+                        </Button>
+                        <Button onClick={submitHandler} color="primary">
+                            Submit 
+                        </Button>
+                        </DialogActions>
+
+
+
+
+
+                    </Dialog>
+                     
+                    </div>
+
+                </diV>
+                
+
+                {/* Card */}
+                {"              "}
+
+                <diV className="plan_box">
+                   
+                    <div className="head">
+                       <h3>SMM Silver  🥈 </h3>
+                       <p>₹ 4000 <span>+ Ad spent </span></p>
+                    </div>
+                   
+                    <div className="features">
+                    <h3>Duration : 1 Month</h3>
+                        <ul>
+                        <li>
+                                Account Handling 
+                            </li>
+                            <li>
+                                Audience Research
+                            </li>
+                            <li>
+                                Strategy Preprations
+                            </li>
+
+                            <li>
+                                 Color Corrections  ✔️
+                                 
+                            </li>
+                            
+                            <li>
+                                Font Changes ✔️
+                            </li>
+
+                            <li>
+                            Two variants for same design ✔️
                             </li>
                         </ul>
                     </div>
                    
                     <div className="btn">
                     <Button variant="contained" color="inherit" className="MuiButton-root">
-                        Submit
+                    Get Started
                     </Button>
                     </div>
 
                 </diV>
+                
+                <diV className="plan_box">
+                   
+                   <div className="head">
+                      <h3>SMM Gold  🥇 </h3>
+                      <p>₹ 5000 <span>+ Ad spent</span></p>
+                   </div>
+                  
+                   <div className="features">
+                   <h3>Duration : 1 Month</h3>
+                       <ul>
+                       <li>
+                                Account Handling 
+                            </li>
+                            <li>
+                                Audience Research
+                            </li>
+                            <li>
+                                Strategy Preprations
+                            </li>
 
-                {/* Card */}
+                            <li>
+                                 Color Corrections  ✔️
+                                 
+                            </li>
+                            
+                            <li>
+                                Font Changes ✔️
+                            </li>
 
+                            <li>
+                            Two variants for same design ✔️
+                            </li>
+
+                            <li>
+                                Design Modifications ✔️
+                            </li>
+                       </ul>
+                   </div>
+                  
+                   <div className="btn">
+                   <Button variant="contained" color="inherit" className="MuiButton-root">
+                   Get Started
+                   </Button>
+                   </div>
+
+               </diV>
             </div>
 
             <div className="text">

@@ -41,6 +41,10 @@ export default function SimplePaper({image , title }) {
   const handleClose = () => {
     setOpen(false);
   };
+  
+  const body = (
+    <h2>Hi there fellas </h2>
+  )
 
   return (
     <div>
@@ -64,12 +68,15 @@ export default function SimplePaper({image , title }) {
           timeout: 500, 
         }}
       >
+        
+        
         <Fade in={open}>
           <div className={classes.paper} >
             {/* <h2 id="transition-modal-title">Transition modal</h2> */}
             <img src={image} alt="project" className={classes.paper} />
           </div>
         </Fade>
+    
       </Modal>
     </div>
     
