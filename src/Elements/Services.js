@@ -15,6 +15,7 @@ import db from '../firebaseconfig';
 
 
 
+
 function Services() {
 
     
@@ -58,17 +59,8 @@ function Services() {
         };
 
 
-     const [info,setInfo]  = useState( [
-
-     {title : 'Submission form', subtitle : 'Submit the following form after reading the T&c Carefully', }
-
-
-
-
-
-
-     ])
-
+    
+        
 
         
     return (
@@ -243,10 +235,16 @@ function Services() {
                     </div>
                    
                     <div className="btn">
-                    <Button variant="contained" color="inherit" className="MuiButton-root">
+                    <Button variant="contained" color="inherit" className="MuiButton-root" onClick = {handleClickOpen}>
                     Get Started
                     </Button>
+
+                      
+                
+                      
                     </div>
+
+
 
                 </diV>
                 
