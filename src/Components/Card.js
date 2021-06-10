@@ -22,8 +22,8 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     outline:0,
-    width: theme.spacing(100),
-    height:theme.spacing(60),
+    width: theme.spacing(80),
+    height:theme.spacing(80),
     borderRadius:7,
     backgroundSize: "cover",
     boxShadow: theme.shadows[5],

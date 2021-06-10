@@ -36,6 +36,7 @@ function Services() {
         const [name , setName ] = useState('');
         const [email , setEmail ] = useState('');
         const [phone , setPhone ] = useState('');
+        const [packagetyp , setPackagetyp ] = useState('');
 
         const submitHandler = (e) => {
 
@@ -45,6 +46,8 @@ function Services() {
                 name: name,
                 email : email,
                 phone: phone,
+                pacakage : packagetyp , 
+
                 
     
             })
@@ -55,6 +58,7 @@ function Services() {
             setName("");
             setEmail("");
             setPhone("");
+            
             
         };
 
@@ -109,12 +113,12 @@ function Services() {
                     </Button>
                     <Dialog open = {open} onClose = {handleClose} >
 
-                      <DialogTitle><h2  >Submission Form</h2> </DialogTitle>
+                      <DialogTitle><h2  >Bronze Package 🥉 </h2> </DialogTitle>
 
                       <DialogContent>
 
                       <DialogContentText>
-                         <h3> Submit the following form after reading the T&c Carefully  </h3>
+                         <h3>  </h3>
 
                           <p>    </p>     
                         
@@ -174,6 +178,24 @@ function Services() {
                         value = {phone}
                         onChange={(e)=> setPhone(e.target.value )}
                          />
+
+
+                       <TextField
+                        autoFocus
+                        margin="dense"
+                        id="name1"
+                        label="Package"
+                        type="text"
+                        fullWidth
+                        value = {packagetyp}
+                        onChange={(e)=> setPackagetyp(e.target.value )} 
+                         />
+
+
+
+
+
+
 
                       </DialogContent>
                       <DialogActions>
